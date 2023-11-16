@@ -21,7 +21,7 @@
 
 Main Screen        |  Result Screen       
 :-------------------------:|:-------------------------:|
-<img src="https://github.com/icanerdogan/ImageLabelingApp-MLKit/assets/52867508/e3cb60ce-ca57-469b-bb65-e9832b7fa305"> | ![result-screen](https://github.com/icanerdogan/ImageLabelingApp-MLKit/assets/52867508/4546db84-37d5-43d1-bf39-1f3f79e1b357)
+![main-screen](https://github.com/icanerdogan/ImageLabelingApp-MLKit/assets/52867508/84102370-9f91-4fe2-b68b-34f05b63afc2) | ![result-screen](https://github.com/icanerdogan/ImageLabelingApp-MLKit/assets/52867508/4546db84-37d5-43d1-bf39-1f3f79e1b357)
 
 ## License
 
