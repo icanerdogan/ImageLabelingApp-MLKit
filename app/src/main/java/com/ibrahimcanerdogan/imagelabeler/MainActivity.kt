@@ -110,12 +110,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun takePhoto() {
-        captureRequestBuilder = cameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_STILL_CAPTURE)
-        captureRequestBuilder.addTarget(imageReader.surface)
-        val rotation = windowManager.defaultDisplay.rotation
+        try {
+            captureRequestBuilder = cameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_STILL_CAPTURE)
+            captureRequestBuilder.addTarget(imageReader.surface)
+            val rotation = windowManager.defaultDisplay.rotation
 
-        captureRequestBuilder.set(CaptureRequest.JPEG_ORIENTATION, viewModel.orientations.get(rotation))
-        cameraCaptureSession.capture(captureRequestBuilder.build(), null, null)
+            captureRequestBuilder.set(CaptureRequest.JPEG_ORIENTATION, viewModel.orientations.get(rotation))
+            cameraCaptureSession.capture(captureRequestBuilder.build(), null, null)
+        } catch (e: Exception) {
+            Log.e(TAG, e.message.toString())
+        }
     }
 
     // Camera State Callback
